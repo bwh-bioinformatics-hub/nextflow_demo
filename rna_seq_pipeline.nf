@@ -119,7 +119,7 @@ process STAR{
 
     input:
     tuple val(base), file(reads) from trim_reads_ch
-    file(star_idx) from ch_star
+    file(star_idx) from star_built
 
     output:
     tuple val(base), file("${base}/${base}.Aligned.sortedByCoord.out.bam") into star_bam_files 
