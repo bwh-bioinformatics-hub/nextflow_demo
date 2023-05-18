@@ -68,7 +68,6 @@ process STAR_INDEX {
     """
 }
 
-ch_star = params.star ? Channel.value(file(params.star)) : star_built
 
 /*
 ================================================================================
