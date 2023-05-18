@@ -1,0 +1,5 @@
+Sample_ID,Read1,Read2,Bam
+Y1,/mnt/data0/projects/biohub/yeku2023/data/fastq_files/Y1_1.fq.gz,/mnt/data0/projects/biohub/yeku2023/data/fastq_files/Y1_2.fq.gz,NA
+Y2,/mnt/data0/projects/biohub/yeku2023/data/fastq_files/Y2_1.fq.gz,/mnt/data0/projects/biohub/yeku2023/data/fastq_files/Y2_2.fq.gz,NA
+Y3,/mnt/data0/projects/biohub/yeku2023/data/fastq_files/Y3_1.fq.gz,/mnt/data0/projects/biohub/yeku2023/data/fastq_files/Y3_2.fq.gz,NA
+Y5,/mnt/data0/projects/biohub/yeku2023/data/fastq_files/Y5_1.fq.gz,/mnt/data0/projects/biohub/yeku2023/data/fastq_files/Y5_2.fq.gz,NA
