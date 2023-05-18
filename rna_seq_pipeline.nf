@@ -105,8 +105,6 @@ process TRIM_GALORE {
 }
 
 
-aligner_reads = trim_reads_ch 
-
 process FASTQC_TRIMMED {
 
     publishDir (
@@ -142,7 +140,7 @@ process STAR{
     )
 
     input:
-    tuple val(base), file(reads) from aligner_reads
+    tuple val(base), file(reads) from trim_reads_ch
     file(star_idx) from ch_star
 
     output:
