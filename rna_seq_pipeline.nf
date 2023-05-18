@@ -105,7 +105,7 @@ process TRIM_GALORE {
 }
 
 
-aligner_reads = params.trim_fastq ? trim_reads_ch : raw_reads
+aligner_reads = trim_reads_ch 
 
 process FASTQC_TRIMMED {
 
