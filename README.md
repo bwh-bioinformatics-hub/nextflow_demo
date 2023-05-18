@@ -33,5 +33,5 @@ conda env create -f env/environment.yml
 ```
 Once the Conda environment has been installed to run:
 ```
-nextflow run rna_seq_pipeline.nf with-conda /home/acicalo/miniconda3/envs/rna_seq_pipeline
+nextflow run rna_seq_pipeline.nf with-conda /home/bwh-bioinformatics-hub/miniconda3/envs/rna_seq_pipeline
 
