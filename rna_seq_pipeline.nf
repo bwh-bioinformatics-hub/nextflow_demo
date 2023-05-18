@@ -25,7 +25,7 @@ process FASTQC_RAW {
     tuple val(base), file(fastq) from fastqc_reads
 
     output:
-    file("*.{html,zip}") into fastqc_raw
+    file("*.{html,zip}") into fastqc_output
 
     script:
     """
