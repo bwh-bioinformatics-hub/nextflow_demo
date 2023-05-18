@@ -8,8 +8,8 @@ ch_input = extract_data(csv_file)
 // genome inputs 
 ch_fasta = Channel.value(file(params.fasta))
 ch_gtf   = Channel.value(file(params.gtf))
-
-(fastqc_reads, trimming_reads, raw_reads) = ch_input.into(3)
+// Create 3 sepearate channels to be used for 3 processes
+(fastqc_reads, trimming_reads, raw_reads) = ch_input.into(3) 
 
 def summary = [:]
 if(params.star)               summary ['STAR indices']     = params.star
