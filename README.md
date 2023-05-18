@@ -31,5 +31,7 @@ Once you have cloned the repo, to create conda environment with dependencies ins
 ```
 conda env create -f env/environment.yml 
 ```
-
+Once the Conda environment has been installed to run:
+```
+nextflow run rna_seq_pipeline.nf with-conda /home/acicalo/miniconda3/envs/rna_seq_pipeline
 
