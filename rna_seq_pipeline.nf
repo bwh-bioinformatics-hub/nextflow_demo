@@ -104,28 +104,6 @@ process TRIM_GALORE {
     """
 }
 
-
-process FASTQC_TRIMMED {
-
-    publishDir (
-        path: "${params.outdir}/Reports/FastQC_trimmed",
-        mode: 'copy',
-        overwrite: 'true',
-    )
-
-
-    input:
-    tuple val(base), file(fastq) from trim_reads_ch_fastqc
-
-    output:
-    file ("*.{html,zip}") into fastqc_trimmed
-
-    script:
-    """
-    fastqc -q $fastq --threads ${task.cpus}
-    """
-}
-
 /*
 ================================================================================
                                 STAR Alignment
