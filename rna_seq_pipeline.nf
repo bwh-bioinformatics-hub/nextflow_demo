@@ -88,7 +88,7 @@ process TRIM_GALORE {
     tuple val(base), file(fastq) from trimming_reads
 
     output:
-    tuple val(base), file('*.fq.gz') into trim_reads_ch, trim_reads_ch_fastqc
+    tuple val(base), file('*.fq.gz') into trim_reads_ch
     //file(*) into trim_results
 
     script:
