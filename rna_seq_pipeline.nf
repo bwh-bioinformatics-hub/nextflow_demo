@@ -9,11 +9,7 @@ ch_input = extract_data(csv_file)
 ch_fasta = Channel.value(file(params.fasta))
 ch_gtf   = Channel.value(file(params.gtf))
 
-if(params.input_type == 'bam'){
-    (fastqc_reads, trimming_reads, raw_reads) = ch_input.into(3)
-}else if(params.input_type == 'fastq'){
-    (fastqc_reads, trimming_reads, raw_reads) = ch_input.into(3)
-}
+(fastqc_reads, trimming_reads, raw_reads) = ch_input.into(3)
 
 def summary = [:]
 if(params.star)               summary ['STAR indices']     = params.star
