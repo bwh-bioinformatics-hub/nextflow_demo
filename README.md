@@ -12,8 +12,9 @@ This pipeline manages a RNA-Seq workflow starting from raw fastq files and conve
 them to standard file formats for use by downstream tools. The steps involved are:
 
 * FastQC: Import of data from BAM, SAM or FastQ files (any variant). This tool provides a quick overview to tell you in which areas there may be problems. Creates a summary graphs and tables to quickly assess your data.
-* STAR: Alignment of reads to reference genome.
 * Trim Galore: Adapter Trimming
+* STAR: Alignment of reads to reference genome.
+
 <a id="dependencies"></a>
 
 ## Dependencies    
