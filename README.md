@@ -27,8 +27,6 @@ Clone this repo:
 ```
 git clone https://github.com/bwh-bioinformatics-hub/nextflow_demo.git
 ```
-
-```
 Once you have cloned the repo, to create conda environment with dependencies installed
 ```
 conda env create -f env/environment.yml 
