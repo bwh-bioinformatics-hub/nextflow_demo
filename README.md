@@ -23,8 +23,13 @@ We have handled all software requirements using Conda.
 The only thing user will need to install is miniconda, which can be installed following this manual:
 https://educe-ubc.github.io/conda.html
 
+Clone this repo:
 ```
-To create conda environment with dependencies install
+git clone https://github.com/bwh-bioinformatics-hub/nextflow_demo.git
+```
+
+```
+Once you have cloned the repo, to create conda environment with dependencies installed
 ```
 conda env create -f env/environment.yml 
 ```
